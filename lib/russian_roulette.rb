@@ -21,16 +21,16 @@ class RussianRoulette
   end
 
   def next_talker
-    message = if @talkers.empty?
-      "もう発表者はいません。お疲れ様でした。"
-    else
-      talker = @talkers.pop
+    @talkers.pop.tap do |talker|
+      message = if talker
+        "次は#{talker}さんの番です。"
+      else
+        "もう発表者はいません。お疲れ様でした。"
+      end
 
-      "次は#{talker}さんの番です。"
+      puts message
+
+      system("say #{Shellwords.shellescape(message)}")
     end
-
-    puts message
-
-    system("say #{Shellwords.shellescape(message)}")
   end
 end
