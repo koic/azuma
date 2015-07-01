@@ -7,7 +7,7 @@ describe RussianRoulette::Core do
     context 'talks has not been finished' do
       let(:talkers) { ['小栗虫太郎', '夢野久作', '塔晶夫'] }
 
-      it { is_expected.to be }
+      it { is_expected.to match Regexp.union(talkers) }
     end
 
     context 'talks has been finished' do
