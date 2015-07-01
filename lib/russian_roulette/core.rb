@@ -1,5 +1,3 @@
-require 'shellwords'
-
 module RussianRoulette
   class Core
     def initialize(talkers)
