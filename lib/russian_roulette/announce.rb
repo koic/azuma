@@ -11,7 +11,9 @@ module Announce
 
       puts message
 
-      system("say #{Shellwords.shellescape(message)}")
+      if /darwin/ === RUBY_PLATFORM
+        system("say #{Shellwords.shellescape(message)}")
+      end
     end
   end
 end
