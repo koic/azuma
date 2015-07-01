@@ -1,0 +1,43 @@
+#!/usr/bin/env ruby
+#
+# USAGE:
+#
+#  ./bin/russian_roulette --talkers="小栗虫太郎,夢野久作,塔晶夫"
+#
+lib_path = File.expand_path('../../lib', __FILE__)
+$:.unshift(lib_path)
+
+require 'optparse'
+require 'readline'
+require 'russian_roulette'
+
+options = {}
+
+opt = OptionParser.new
+opt.on('-t', '--talkers="NAME1,NAME2..."') {|v| options[:talkers] = v }
+
+begin
+  opt.parse!(ARGV)
+rescue OptionParser::MissingArgument => e
+  puts opt.help
+
+  exit!
+end
+
+unless (talkers = options[:talkers])
+  puts opt.help
+
+  exit!
+end
+
+talkers = talkers.split(',').map(&:strip)
+
+roulette = RussianRoulette.entry(talkers)
+
+Signal.trap(:EXIT) { puts; exit! }
+
+puts 'Ctrl-D to exit'
+
+while Readline.readline('> press enter to show next talker', true)
+  break unless roulette.next_talker
+end

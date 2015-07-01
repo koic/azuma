@@ -4,16 +4,17 @@ Decide the order of lightning talkers.
 
 ## USAGE
 
-```ruby
-talkers = %w(
-  岩本
-  杉野
-  馬場
-)
-
-roulette = RussianRoulette.entry(talkers)
-
-roulette.next_talker
+```
+./bin/russian_roulette --talkers="小栗虫太郎,夢野久作,塔晶夫"
+Ctrl-D to exit
+> press enter to show next talker
+次は塔晶夫さんの番です。
+> press enter to show next talker
+次は小栗虫太郎さんの番です。
+> press enter to show next talker
+次は夢野久作さんの番です。
+> press enter to show next talker
+もう発表者はいません。お疲れ様でした。
 ```
 
 ## LICENCE
