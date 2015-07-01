@@ -11,7 +11,7 @@ talkers = %w(
   馬場
 )
 
-roulette = RussianRoulette.new(talkers)
+roulette = RussianRoulette.entry(talkers)
 
 roulette.next_talker
 ```
