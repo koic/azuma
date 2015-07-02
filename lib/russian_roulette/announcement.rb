@@ -1,6 +1,6 @@
 require 'shellwords'
 
-module Announce
+module Announcement
   def next_talker
     super.tap do |talker|
       message = if talker
