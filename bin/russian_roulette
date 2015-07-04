@@ -8,8 +8,8 @@ lib_path = File.expand_path('../../lib', __FILE__)
 $:.unshift(lib_path)
 
 require 'optparse'
-require 'readline'
 require 'russian_roulette'
+require 'russian_roulette/cli'
 
 options = {}
 
@@ -32,12 +32,4 @@ end
 
 talkers = talkers.split(',').map(&:strip)
 
-roulette = RussianRoulette.entry(talkers)
-
-Signal.trap(:EXIT) { puts; exit! }
-
-puts 'Ctrl-D to exit'
-
-while Readline.readline('> press enter to show next talker', true)
-  break unless roulette.next_talker
-end
+RussianRoulette::CLI.start(talkers)
