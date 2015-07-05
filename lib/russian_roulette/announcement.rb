@@ -12,7 +12,7 @@ module Announcement
       puts message
 
       if /darwin/ === RUBY_PLATFORM
-        system("say #{Shellwords.shellescape(message)}")
+        spawn("say #{Shellwords.shellescape(message)}")
       end
     end
   end
