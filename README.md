@@ -20,7 +20,7 @@ Ctrl-D to exit
 > press enter to show next talker
 次は夢野久作さんの番です。
 > press enter to show next talker
-もう発表者はいません。お疲れ様でした。
+すべての発表が終わりました。お疲れ様でした。
 ```
 
 ## LICENCE

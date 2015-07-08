@@ -32,7 +32,7 @@ module Azuma
 
     def curtain_talk
       if language == 'ja'
-        'もう発表者はいません。お疲れ様でした。'
+        'すべての発表が終わりました。お疲れ様でした。'
       else
         'All of the presentation was the end. Thank you for your kind attention.'
       end
