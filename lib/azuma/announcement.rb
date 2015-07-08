@@ -13,7 +13,7 @@ module Azuma
         puts message
 
         if /darwin/ === RUBY_PLATFORM
-          spawn("say #{Shellwords.shellescape(message)}")
+          system("say #{Shellwords.shellescape(message)}")
         end
       end
     end
