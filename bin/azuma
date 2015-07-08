@@ -15,6 +15,7 @@ options = {}
 
 opt = OptionParser.new
 opt.on('-t', '--talkers="NAME1,NAME2..."') {|v| options[:talkers] = v }
+opt.on('-l', '--lang=ja (DEFAULT en)') {|v| options[:lang] = v }
 
 begin
   opt.parse!(ARGV)
@@ -31,5 +32,6 @@ unless (talkers = options[:talkers])
 end
 
 talkers = talkers.split(',').map(&:strip)
+language = options[:lang] || 'en'
 
-Azuma::CLI.start(talkers)
+Azuma::CLI.start(talkers, language)

@@ -2,8 +2,10 @@ require 'readline'
 
 module Azuma
   class CLI
-    def self.start(talkers)
-      roulette = Azuma.entry(talkers)
+    def self.start(talkers, language)
+      language ||= 'en'
+
+      roulette = Azuma.entry(talkers, language)
 
       Signal.trap(:EXIT) { puts; exit! }
 
