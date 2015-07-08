@@ -11,7 +11,7 @@ $ gem install azuma
 ## USAGE
 
 ```
-azuma --talkers="小栗虫太郎,夢野久作,塔晶夫"
+azuma --talkers="小栗虫太郎,夢野久作,塔晶夫" --lang=ja
 Ctrl-D to exit
 > press enter to show next talker
 次は塔晶夫さんの番です。
