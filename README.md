@@ -2,6 +2,12 @@
 
 Decide the order of Lightning Lalkers.
 
+## INSTALL
+
+```
+$ gem install azuma
+```
+
 ## USAGE
 
 ```
