@@ -1,9 +1,9 @@
 require 'readline'
 
-module RussianRoulette
+module Azuma
   class CLI
     def self.start(talkers)
-      roulette = RussianRoulette.entry(talkers)
+      roulette = Azuma.entry(talkers)
 
       Signal.trap(:EXIT) { puts; exit! }
 

@@ -1,4 +1,4 @@
-module RussianRoulette
+module Azuma
   class Core
     def initialize(talkers)
       @talkers = talkers.shuffle

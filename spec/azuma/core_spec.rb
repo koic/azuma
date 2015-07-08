@@ -1,5 +1,5 @@
-describe RussianRoulette::Core do
-  let(:roulette) { RussianRoulette::Core.new(talkers) }
+describe Azuma::Core do
+  let(:roulette) { Azuma::Core.new(talkers) }
 
   describe '#next_talker' do
     subject { roulette.next_talker }

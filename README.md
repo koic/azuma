@@ -1,11 +1,11 @@
-# russian_roulette
+# azuma (雷)
 
-Decide the order of lightning talkers.
+Decide the order of Lightning Lalkers.
 
 ## USAGE
 
 ```
-./bin/russian_roulette --talkers="小栗虫太郎,夢野久作,塔晶夫"
+azuma --talkers="小栗虫太郎,夢野久作,塔晶夫"
 Ctrl-D to exit
 > press enter to show next talker
 次は塔晶夫さんの番です。

@@ -2,14 +2,14 @@
 #
 # USAGE:
 #
-#  ./bin/russian_roulette --talkers="小栗虫太郎,夢野久作,塔晶夫"
+#  azuma --talkers="小栗虫太郎,夢野久作,塔晶夫"
 #
 lib_path = File.expand_path('../../lib', __FILE__)
 $:.unshift(lib_path)
 
 require 'optparse'
-require 'russian_roulette'
-require 'russian_roulette/cli'
+require 'azuma'
+require 'azuma/cli'
 
 options = {}
 
@@ -32,4 +32,4 @@ end
 
 talkers = talkers.split(',').map(&:strip)
 
-RussianRoulette::CLI.start(talkers)
+Azuma::CLI.start(talkers)
