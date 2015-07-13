@@ -1,5 +1,5 @@
-describe Azuma::Core do
-  let(:azuma) { Azuma::Core.new(talkers) }
+describe Azuma::Designator do
+  let(:azuma) { Azuma::Designator.new(talkers) }
 
   describe '#next_talker' do
     subject { azuma.next_talker }

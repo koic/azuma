@@ -1,5 +1,5 @@
 module Azuma
-  class Core
+  class Designator
     def initialize(talkers)
       @talkers = talkers.shuffle
     end

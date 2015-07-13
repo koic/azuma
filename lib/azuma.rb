@@ -1,13 +1,13 @@
 require 'azuma/announcement'
-require 'azuma/core'
+require 'azuma/designator'
 
-Azuma::Core.prepend Azuma::Announcement
+Azuma::Designator.prepend Azuma::Announcement
 
 module Azuma
   def entry(talkers, language)
-    core = Azuma::Core.new(talkers)
-    core.language = language
-    core
+    designator = Azuma::Designator.new(talkers)
+    designator.language = language
+    designator
   end
 
   module_function :entry
