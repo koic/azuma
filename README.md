@@ -1,6 +1,6 @@
 # azuma (雷) [![Build Status](https://travis-ci.org/koic/azuma.svg)](https://travis-ci.org/koic/azuma) [![Gem Version](https://badge.fury.io/rb/azuma.svg)](http://badge.fury.io/rb/azuma)
 
-Decide the order of Lightning Lalkers.
+Decide the order of Lightning Talkers.
 
 ## INSTALL
 

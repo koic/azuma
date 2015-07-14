@@ -5,8 +5,8 @@ require 'azuma/version'
 Gem::Specification.new do |s|
   s.platform = Gem::Platform::RUBY
   s.name = 'azuma'
-  s.summary = 'Decide the order of Lightning Lalkers.'
-  s.description = 'Decide the order of Lightning Lalkers.'
+  s.summary = 'Decide the order of Lightning Talkers.'
+  s.description = 'Decide the order of Lightning Talkers.'
 
   s.version = Azuma::VERSION
 
