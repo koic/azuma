@@ -1,3 +1,7 @@
+## 0.0.3
+
+* [Fixed typo](https://github.com/koic/azuma/commit/2a4133720ee4ebbdae0241b56be8206e6dcdc19f)
+
 ## 0.0.2
 
 * [Use a moderate expression to curtain talk in japanise.](https://github.com/koic/azuma/commit/b3ab8d0585ca3be1dc5fcf429b38103a8adfd651)
