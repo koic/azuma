@@ -23,6 +23,14 @@ Ctrl-D to exit
 すべての発表が終わりました。お疲れ様でした。
 ```
 
+### OPTIONS
+
+```
+Usage: azuma [options]
+    -t, --talkers="NAME1,NAME2..."
+    -l, --lang=ja (DEFAULT en)
+```
+
 ## LICENCE
 
 The MIT Licence
