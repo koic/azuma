@@ -1,3 +1,7 @@
+## 0.0.4
+
+[s.required_ruby_version = '>= 2.1.0'](https://github.com/koic/azuma/commit/fd9d83445f82eb3a6a0ca5a7e25f0579e75c3193)
+
 ## 0.0.3
 
 * [Fixed typo](https://github.com/koic/azuma/commit/2a4133720ee4ebbdae0241b56be8206e6dcdc19f)
