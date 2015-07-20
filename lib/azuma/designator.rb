@@ -5,7 +5,7 @@ module Azuma
     end
 
     def next_talker
-      @talkers.pop
+      @talkers.shift
     end
   end
 end
