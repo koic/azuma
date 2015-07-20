@@ -26,7 +26,7 @@ Gem::Specification.new do |s|
   s.require_paths = ['lib']
   s.executables = `git ls-files -- bin/*`.split("\n").map {|f| File.basename(f) }
 
-  s.required_ruby_version = '>= 2.0.0'
+  s.required_ruby_version = '>= 2.1.0'
   s.license = 'MIT'
 
   s.add_development_dependency('rspec', '>= 3.0.0')
