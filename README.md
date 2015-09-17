@@ -33,7 +33,7 @@ Usage: azuma [options]
 
 ## LICENCE
 
-The MIT Licence
+azuma (雷) is released under the [MIT License](http://www.opensource.org/licenses/MIT).
 
 ## Contributing
 
