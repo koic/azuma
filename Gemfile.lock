@@ -4,7 +4,7 @@ PATH
     azuma (0.0.4)
 
 GEM
-  remote: http://rubygems.org/
+  remote: https://rubygems.org/
   specs:
     diff-lcs (1.2.5)
     rspec (3.3.0)
